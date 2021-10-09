@@ -227,41 +227,70 @@
 
         //************Arrays************
 
-        const a = []
-        const b = [1, true, "hola", ["a","b","c", [1,2,3]]]
-        console.log(a)
-        console.log(b)
-        console.log(b.length)
-        console.log(b[2]) //Imprimir un elemento del array
-        console.log(b[3][2])
-        console.log(b[3][3][1])
+        // const a = []
+        // const b = [1, true, "hola", ["a","b","c", [1,2,3]]]
+        // console.log(a)
+        // console.log(b)
+        // console.log(b.length)
+        // console.log(b[2]) //Imprimir un elemento del array
+        // console.log(b[3][2])
+        // console.log(b[3][3][1])
 
 
-        const c = Array.of("X","Y","Z",9,3,4)
-        console.log(c)
+        // const c = Array.of("X","Y","Z",9,3,4)
+        // console.log(c)
 
-        const d = Array(30).fill(false)
-        console.log(d)
+        // const d = Array(30).fill(false)
+        // console.log(d)
 
-        const e = new Array(1,2,3,true,false)
-        console.log(e)
+        // const e = new Array(1,2,3,true,false)
+        // console.log(e)
 
         const colores = ["Rojo","Verde","Amarillo","Azul","Morado","Negro"]
-        console.log(colores)
+        // console.log(colores)
 
-        colores.push("Dorado")
-        console.log(colores)
+        // colores.push("Dorado")
+        // console.log(colores)
 
-        colores.pop() // Quita el ultimo elemento
-        console.log(colores)
+        // colores.pop() // Quita el ultimo elemento
+        // console.log(colores)
 
-        colores.forEach(function(col){
-            console.log(`<li>${col}</li>`) // imprimir con forma
-        })
+        // colores.forEach(function(col){
+        //     console.log(`<li>${col}</li>`) // imprimir con forma
+        // })
 
-        colores.forEach(function(col, index){
-            console.log(`<li id = "${index}">${col}</li>`) // imprimir con forma
-        })
+        // colores.forEach(function(col, index){
+        //     console.log(`<li id = "${index}">${col}</li>`) // imprimir con forma
+        // })
+
+        
+ 
+
+
+        //************Ciclo For************
+
+        let nombres = 5
+
+        for( i = 0; i <= nombres; i++){
+            document.write("Me gusta lo que hago" + "<br>")
+        }
+
+        for( i = 0; i <= 10; i++){
+            document.write( i + "<br>")
+        }
+
+        for( i = 0; i <= colores.length; i++){
+            document.write( colores[i] + "<br>")
+        }
+
+        for( i = 0; i <= colores.length - 1; i++){
+            document.write( colores[i] + "<br>")
+        }
+
+
+
+
+
 
 
 
