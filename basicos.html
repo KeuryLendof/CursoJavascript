@@ -89,7 +89,7 @@
 
 
 
-        // //Concatenacion
+        // //************Concatenacion************
 
         // let nombre = 'keury'
         // let apellido = 'lendof'
@@ -125,7 +125,7 @@
         // console.log(ul2)
 
 
-        // //Numeros
+        // //************Numeros************
 
         // let a = 2;
         // let b = new Number(3);
@@ -154,7 +154,7 @@
 
 
 
-        // //Undefined, null & NaN
+        // //************Undefined, null & NaN************
 
         // /*Undefined indica que no se ha 
         // inicializado una valiable y que
@@ -175,54 +175,104 @@
         // console.log(noEsUnNumero)
 
 
-        //Funciones
+        //************Funciones************
 
-        function estoEsUnaFuncion(){
-            console.log("uno");
-            console.log("dos");
-            console.log("tres");
-        }
+        // function estoEsUnaFuncion(){
+        //     console.log("uno");
+        //     console.log("dos");
+        //     console.log("tres");
+        // }
 
-        function devolverValor(){
-            console.log("uno");
-            console.log("dos");
-            console.log("tres");
-            return "La funcion esta retornando una cadena de texto"
-        }
+        // function devolverValor(){
+        //     console.log("uno");
+        //     console.log("dos");
+        //     console.log("tres");
+        //     return "La funcion esta retornando una cadena de texto"
+        // }
 
 
-        //Invocacion de funciones
+        //************Invocacion de funciones************
 
         // let valorFuncion = devolverValor();
         // estoEsUnaFuncion()
         // console.log(valorFuncion);
 
-        function saludar(nombre,edad){
-            console.log(`Hola mi nombre es ${nombre} 
-            y tengo ${edad} años.`)
-        }
+        // function saludar(nombre,edad){
+        //     console.log(`Hola mi nombre es ${nombre} 
+        //     y tengo ${edad} años.`)
+        // }
 
-        saludar("Keury", 19)
-        saludar()
+        // saludar("Keury", 19)
+        // saludar()
 
 
 
-        funcionDeclarada()
+        // funcionDeclarada()
 
-        function funcionDeclarada(){
-            console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo")
-        }
+        // function funcionDeclarada(){
+        //     console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo")
+        // }
 
-        funcionDeclarada()
+        // funcionDeclarada()
 
-        //Funcion Anonima
-        const funcionExpresada = function(){
-            console.log("Esto es una funcion expresada que esta dentro de una variable" +" "+
-            "si invocamos esta funcion antes de su creacion nos dara error.")
-        }
+        // //Funcion Anonima
+        // const funcionExpresada = function(){
+        //     console.log("Esto es una funcion expresada que esta dentro de una variable" +" "+
+        //     "si invocamos esta funcion antes de su creacion nos dara error.")
+        // }
 
-        funcionExpresada()
+        // funcionExpresada()
+
+
+
+        //************Arrays************
+
+        const a = []
+        const b = [1, true, "hola", ["a","b","c", [1,2,3]]]
+        console.log(a)
+        console.log(b)
+        console.log(b.length)
+        console.log(b[2]) //Imprimir un elemento del array
+        console.log(b[3][2])
+        console.log(b[3][3][1])
+
+
+        const c = Array.of("X","Y","Z",9,3,4)
+        console.log(c)
+
+        const d = Array(30).fill(false)
+        console.log(d)
+
+        const e = new Array(1,2,3,true,false)
+        console.log(e)
+
+        const colores = ["Rojo","Verde","Amarillo","Azul","Morado","Negro"]
+        console.log(colores)
+
+        colores.push("Dorado")
+        console.log(colores)
+
+        colores.pop() // Quita el ultimo elemento
+        console.log(colores)
+
+        colores.forEach(function(col){
+            console.log(`<li>${col}</li>`) // imprimir con forma
+        })
+
+        colores.forEach(function(col, index){
+            console.log(`<li id = "${index}">${col}</li>`) // imprimir con forma
+        })
+
+
+
+
+
+
+
+
+
         
+
 
 
 
