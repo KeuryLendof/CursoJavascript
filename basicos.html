@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empezando</title>
+</head>
+<body>
+    <h1>Empezando En JavaScript</h1>
+
+
+    <script>
+
+        // Var genera variables globales y let variables en bloques, es mala practica usar var.
+
+
+        // var hola = "Hola Mundo"
+        // let hello = "Hola Mundo"
+        // console.log(hola);
+        // console.log(hello);
+
+        // console.log("***************var****************")
+
+
+        // var musica = "Dembow"
+        // console.log("Musica antes del bloque", musica)
+        // {
+        //     var musica = "Bachata"
+        //     console.log("Musica dentro del bloque", musica)
+        // }
+        // console.log("Musica despues del bloque", musica)
+
+        // console.log("***************let****************")
+
+        // let musica2 = "Dembow"
+        // console.log("Musica antes del bloque", musica2)
+        // {
+        //     let musica2 = "Bachata"
+        //     console.log("Musica dentro del bloque", musica2)
+        // }
+        // console.log("Musica despues del bloque", musica2)
+
+        // console.log("***************const****************")
+
+        // //Const no puede crear variables vacias. Se utiliza para variables que no vallan a cambiar
+        // // Siempre con valores especificos, en excepcion de Objetos o Arreglos y otros atributos compuestos
+
+        // const Pi = 3.1416;
+        // console.log(Pi);
+
+        // // Objetos y Arreglos
+
+        // const objeto ={
+        //     nombre: "Keury",
+        //     apellido: "lendof",
+        //     edad: 19
+        // }
+
+        // const colores = ["blanco","negro","azul"]
+
+        // console.log(objeto)
+        // console.log(colores)
+
+        // objeto.matricula = "2019-8871"
+        // colores.push("verde")
+
+        // console.log(objeto)
+        // console.log(colores)
+
+        // // Cadenas de texto Strings
+
+        // let nombres = "keury alberto"
+        // let apellidos = "lendof diaz"
+        // let saludo = new String("   Hola como estas   ")
+
+        // console.log(saludo,
+        //  nombres,
+        //  apellidos,
+        //  nombres.toUpperCase(), // Todo en mayuscula
+        //  apellidos.toLowerCase(), // Todo en minuscula
+        //  saludo.includes("como"), // Saber si se encuentra esta palabra en el texto
+        //  saludo,
+        //  saludo.trim() // Quitar espacios en blancos innecesarios, solo alante o atras 
+        // );
+
+
+
+
+
+
+        // //Concatenacion
+
+        // let nombre = 'keury'
+        // let apellido = 'lendof'
+
+        // let saludo = 'Hola mi nombre es ' + 
+        // nombre + " " + apellido
+
+        // console.log(saludo);
+
+        // //Interpolacion de variables
+        // //Template String
+
+        // let saludo2 = `Hola mi nombre es ${nombre} ${apellido}` //Interpolar datos
+
+        // console.log(saludo2);
+
+
+        // let ul = "<ul> <li>Lunes</li> <li>Martes</li> <li>Miercoles</li> <li>Jueves</li><li>Viernes</li> <li>Sabado</li><li>Domingo</li></ul>"
+
+        // console.log(ul)
+
+        // let ul2 = `
+        // <ul>
+        //   <li>Lunes</li>
+        //   <li>Martes</li>
+        //   <li>Miercoles</li>
+        //   <li>Jueves</li>
+        //   <li>Viernes</li>
+        //   <li>Sabado</li>
+        //   <li>Domingo</li>
+        // </ul>`;
+
+        // console.log(ul2)
+
+
+        // //Numeros
+
+        // let a = 2;
+        // let b = new Number(3);
+        // let c = 3.1416
+
+        // console.log(a,b);
+        // console.log(c.toFixed(2)); // Reduccir decimales
+        // console.log(c.toFixed(3));
+        // console.log(parseInt(c)); // Quitar decimales de raiz
+
+        // console.log(a+b+c);
+
+        // //Boleanos
+
+        // let verdadero = true;
+        // let falso = false;
+
+        // console.log(verdadero,falso);
+        // console.log(typeof verdadero, typeof falso);
+
+        // console.log(Boolean(0));
+        // console.log(Boolean(42));
+        // console.log(Boolean(null));
+        // console.log(Boolean("hola"));
+        // console.log(Boolean(""));
+
+
+
+        // //Undefined, null & NaN
+
+        // /*Undefined indica que no se ha 
+        // inicializado una valiable y que
+        // el valor es ausente*/
+
+        // let indefinina;
+        // console.log(indefinina)
+
+        // /*null es un valor especial que 
+        // indica la ausencia de un valor*/
+
+        // let nulo = null;
+        // console.log(nulo)
+
+        // /*NaN = Not a Number*/
+
+        // let noEsUnNumero = "hola" * 3.7;
+        // console.log(noEsUnNumero)
+
+
+        //Funciones
+
+        function estoEsUnaFuncion(){
+            console.log("uno");
+            console.log("dos");
+            console.log("tres");
+        }
+
+        function devolverValor(){
+            console.log("uno");
+            console.log("dos");
+            console.log("tres");
+            return "La funcion esta retornando una cadena de texto"
+        }
+
+
+        //Invocacion de funciones
+
+        // let valorFuncion = devolverValor();
+        // estoEsUnaFuncion()
+        // console.log(valorFuncion);
+
+        function saludar(nombre,edad){
+            console.log(`Hola mi nombre es ${nombre} 
+            y tengo ${edad} años.`)
+        }
+
+        saludar("Keury", 19)
+        saludar()
+
+
+
+        funcionDeclarada()
+
+        function funcionDeclarada(){
+            console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo")
+        }
+
+        funcionDeclarada()
+
+        //Funcion Anonima
+        const funcionExpresada = function(){
+            console.log("Esto es una funcion expresada que esta dentro de una variable" +" "+
+            "si invocamos esta funcion antes de su creacion nos dara error.")
+        }
+
+        funcionExpresada()
+        
+
+
+
+
+
+    </script>
+
+</body>
+</html>
