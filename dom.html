@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 class="titulo">Empezando En JavaScript</h1>
-
+    <div id="subtitulo"></div>
     <p id="one">1- El párrafo es un elemento base en la edición de texto. La etiqueta para un párrafo es p</p>
     <p>2- Este atributo ubica un espacio vacíoencima y debajo del texto para hacerlo evidente, así
         el buscador podrá reconocerlo como es.
@@ -25,6 +25,17 @@
         let elementoP = document.getElementsByTagName("p")
         let segundo = document.getElementById("one")
 
+        //***********Nodos***********
+        // 1- crear el elemento
+        let elemento = document.createElement("h2")
+        // 2- crear un nodo de texto
+        let contenido = document.createTextNode("Este es nuestro titular")
+        // 3- anadir el nodo de textoal elemento
+        elemento.appendChild(contenido)
+        // 4- agregar atributos al elemento
+        elemento.setAttribute("align", "center")
+        // 5- agregar elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento)
     </script>
 
 
