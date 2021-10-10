@@ -21,7 +21,7 @@
 
 
     <ol id="lista">
-        <li>fvsvfsvsfvsvvvfsvsvvs</li>
+        <li id="primero">fvsvfsvsfvsvvvfsvsvvs</li>
         <li>Hola soy yo keury alberto lendof diaz</li>
     </ol>
 
@@ -48,17 +48,27 @@
 
 
 
-        let elemento = document.createElement("li")
-        let contenido = document.createTextNode("Nuevo Texto")
-        let padre = document.getElementsByTagName("li")[0].parentNode
-        let hijo = document.getElementsByTagName("li")[0]
-        //let padre = document.getElementById("lista")
+        // let elemento = document.createElement("li")
+        // let contenido = document.createTextNode("Nuevo Texto")
+        // let padre = document.getElementsByTagName("li")[0].parentNode
+        // let hijo = document.getElementsByTagName("li")[0]
+        // //let padre = document.getElementById("lista")
 
 
-        elemento.appendChild(contenido)
-        //document.body.appendChild(elemento)
-        //padre.appendChild(elemento) // inserta de ultimo
-        padre.insertBefore(elemento, hijo) // Inserta de primero
+        // elemento.appendChild(contenido)
+        // //document.body.appendChild(elemento)
+        // //padre.appendChild(elemento) // inserta de ultimo
+        // padre.insertBefore(elemento, hijo) // Inserta de primero
+
+
+        //***********Reenplazar Nodos***********
+
+
+        let primerElemento =  document.getElementById("primero")
+        primerElemento.innerHTML = "Estoy reemplazando el antiguo <i>texto</i>" //Con este accede a todo el contenido html
+        //primerElemento.textContent = "Estoy reemplazando el antiguo <i>texto</i>"
+
+
 
 
     </script>
