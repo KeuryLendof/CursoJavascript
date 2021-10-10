@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+
+    <form action="">
+        <input type="text" id="num1">
+        <br>
+        <input type="text" id="num2">
+        <br>
+        <input type="button" value="Sumar" onclick="alert(suma());">
+
+    </form>
+    
+    <script>
+        let numero1
+        let numero2
+        let resultado
+
+        function suma(num1, num2){
+            numero1 = parseFloat(document.getElementById("num1").value)
+            numero2 = parseFloat(document.getElementById("num2").value)
+
+            resultado = numero1 + numero2
+            return resultado
+        }
+    </script>
+
+
+</body>
+</html>
