@@ -27,7 +27,7 @@
  
 
     <!--***********Atributos DOM***********-->
-    <style>
+    <!-- <style>
         div{
             width: 200px;
             height: 200px;
@@ -52,10 +52,33 @@
         <a href="https://github.com/KeuryLendof/CursoJavascript" id="enlace" target="_blank">Este Proyecto</a>
         <div class=""></div>
         <div class=""></div>
-    </section>
+    </section> -->
 
 
+ 
 
+    <!-- ***********Modificando estilos de elementos*********** -->
+
+    <style>
+        .thumb{
+            width: 200px;
+            transition: 300ms all ease;
+        }
+        .grande{
+            width: 400px;
+        }
+        .titulo{
+            border: 1px solid navy;
+            background: #ccc;
+            padding: 10px;
+        }
+        .tituloGrande{
+            font-size: 60px;
+        }
+    </style>
+
+
+    <h1 id="encabezado" class="titulo tituloGrande">Empezando En JavaScript</h1>
 
 
     <script>
@@ -126,16 +149,22 @@
 
         //***********Atributos DOM***********
 
-        let elemento = document.createElement("div")
-        let padre = document.getElementById("contenedor")
-        let refer = document.getElementsByTagName("div")[0]
+        // let elemento = document.createElement("div")
+        // let padre = document.getElementById("contenedor")
+        // let refer = document.getElementsByTagName("div")[0]
 
 
-        elemento.setAttribute("class", "rojo")
-        document.body.appendChild(elemento)
-        padre.insertBefore(elemento, refer)
+        // elemento.setAttribute("class", "rojo")
+        // document.body.appendChild(elemento)
+        // padre.insertBefore(elemento, refer)
 
 
+        
+
+        //***********Modificando estilos de elementos***********
+
+        let encabezado = document.getElementById("encabezado")
+        encabezado.style.color = "navy"
 
 
     </script>
