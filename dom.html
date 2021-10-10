@@ -24,6 +24,35 @@
         <li id="primero">fvsvfsvsfvsvvvfsvsvvs</li>
         <li>Hola soy yo keury alberto lendof diaz</li>
     </ol>
+ 
+
+    <!--***********Atributos DOM***********-->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: #dddddd;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #aaaaaa;
+        }
+
+        .azul{
+            background: #0074d9;
+            border: 1px solid #000;
+        }
+
+        .rojo{
+            background: #ff4136;
+            border: 1px solid #000;
+        }
+    </style>
+
+    <section id="contenedor">
+        <a href="https://github.com/KeuryLendof/CursoJavascript" id="enlace" target="_blank">Este Proyecto</a>
+        <div class=""></div>
+        <div class=""></div>
+    </section>
 
 
 
@@ -81,13 +110,30 @@
 
 
         //Eliminar
-        let elemento = document.createElement("li")
-        let contenido = document.createTextNode("Nuevo Texto")
-        let padre = document.getElementsByTagName("li")[0].parentNode
-        let refer = document.getElementsByTagName("li")[1]
+        // let elemento = document.createElement("li")
+        // let contenido = document.createTextNode("Nuevo Texto")
+        // let padre = document.getElementsByTagName("li")[0].parentNode
+        // let refer = document.getElementsByTagName("li")[1]
 
-        elemento.appendChild(contenido)
-        padre.removeChild(refer)
+        // elemento.appendChild(contenido)
+        // padre.removeChild(refer)
+
+
+
+
+
+
+
+        //***********Atributos DOM***********
+
+        let elemento = document.createElement("div")
+        let padre = document.getElementById("contenedor")
+        let refer = document.getElementsByTagName("div")[0]
+
+
+        elemento.setAttribute("class", "rojo")
+        document.body.appendChild(elemento)
+        padre.insertBefore(elemento, refer)
 
 
 
