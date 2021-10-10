@@ -61,12 +61,33 @@
         // padre.insertBefore(elemento, hijo) // Inserta de primero
 
 
-        //***********Reenplazar Nodos***********
+        //***********Modificar, Remplazar y Eliminar Nodos***********
+
+        //Modificar
+        // let primerElemento =  document.getElementById("primero")
+        // primerElemento.innerHTML = "Estoy reemplazando el antiguo <i>texto</i>" //Con este accede a todo el contenido html
+        // //primerElemento.textContent = "Estoy reemplazando el antiguo <i>texto</i>"
 
 
-        let primerElemento =  document.getElementById("primero")
-        primerElemento.innerHTML = "Estoy reemplazando el antiguo <i>texto</i>" //Con este accede a todo el contenido html
-        //primerElemento.textContent = "Estoy reemplazando el antiguo <i>texto</i>"
+        //Remplazar
+        // let elemento = document.createElement("li")
+        // let contenido = document.createTextNode("Nuevo Texto")
+        // let padre = document.getElementsByTagName("li")[0].parentNode
+        // let refer = document.getElementsByTagName("li")[0]
+
+        // elemento.appendChild(contenido)
+
+        // padre.replaceChild(elemento, refer)
+
+
+        //Eliminar
+        let elemento = document.createElement("li")
+        let contenido = document.createTextNode("Nuevo Texto")
+        let padre = document.getElementsByTagName("li")[0].parentNode
+        let refer = document.getElementsByTagName("li")[1]
+
+        elemento.appendChild(contenido)
+        padre.removeChild(refer)
 
 
 
