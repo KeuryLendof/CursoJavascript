@@ -23,7 +23,28 @@
 
     <script>
         (function(){
-            let 
+
+            let formulario;
+            let elementos;
+            let boton;
+
+            formulario = document.getElementsByName('formulario')[0];
+            elementos = formulario.elements;
+            boton = document.getElementById('btn')
+
+            function validarNombre(){
+                if(formulario.nombre.value == 0){
+                    alert("Campos vacios")
+                }
+            }
+
+            function validar(){
+                validarNombre();
+            }
+
+            formulario.addEventListener("submit", validar());
+
+
         })
     </script>
 
