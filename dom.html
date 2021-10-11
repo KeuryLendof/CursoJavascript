@@ -24,6 +24,7 @@
         <li id="primero">fvsvfsvsfvsvvvfsvsvvs</li>
         <li>Hola soy yo keury alberto lendof diaz</li>
     </ol>
+
  
 
     <!--***********Atributos DOM***********-->
@@ -62,7 +63,7 @@
     <style>
         .thumb{
             width: 200px;
-            transition: 300ms all ease;
+            transition: 500ms all ease;
         }
         .grande{
             width: 400px;
@@ -79,6 +80,15 @@
 
 
     <h1 id="encabezado" class="titulo tituloGrande">Empezando En JavaScript</h1>
+
+     <!-- ***********Modificando estilos de elementos Tamano de Imagenes*********** -->
+
+    <form action="">
+        <input type="button" value="Cambio de tamano" onclick="zoom()">
+    </form>
+
+    <img id="thumb" class="thumb" src="img/me1.jpg" alt="">
+
 
 
     <script>
@@ -163,8 +173,27 @@
 
         //***********Modificando estilos de elementos***********
 
-        let encabezado = document.getElementById("encabezado")
-        encabezado.style.color = "navy"
+        // let encabezado = document.getElementById("encabezado")
+        // encabezado.style.color = "navy"
+
+
+
+
+        //***********Modificando estilos de elementos Tamano de Imagenes***********
+
+        let thumb = document.getElementById("thumb")
+
+        let zoom = function(){
+            if (thumb.className == "thumb"){
+                thumb.className = "thumb grande"
+            }else{
+                thumb.className = "thumb"
+            }
+            //thumb.setAttribute("class", "thumb grande")
+            //thumb.className = "thumb grande"
+
+        }
+
 
 
     </script>
