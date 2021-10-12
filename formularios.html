@@ -4,48 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>Formularios</title>
 </head>
 <body>
-    <form action=" " name="formulario" method="get">
 
-        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:"><br>
-      
-        <input type="radio" name="sexo" id="hombre" value="Hombre" checked> Hombre<br>
-        <input type="radio" name="sexo" id="mujer" value="Mujer"> Mujer <br>
-
-        <input type="checkbox" name="terminos" id="terminos"> Terminos y Condiciones <br>
-      
-        <input type="submit" id="btn" name="btn" value="Enviar">
-
-    </form>
-
-
-    <script>
-        (function(){
-
-            let formulario;
-            let elementos;
-            let boton;
-
-            formulario = document.getElementsByName('formulario')[0];
-            elementos = formulario.elements;
-            boton = document.getElementById('btn')
-
-            function validarNombre(){
-                if(formulario.nombre.value == 0){
-                    alert("Campos vacios")
-                }
-            }
-
-            function validar(){
-                validarNombre();
-            }
-
-            formulario.addEventListener("submit", validar());
-
-        })
-    </script>
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
 
 
 </body>
