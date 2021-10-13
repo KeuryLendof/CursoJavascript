@@ -4,6 +4,7 @@ const ul = document.querySelector('ul');
 const empty = document.querySelector('.empty')
 
 addBtn.addEventListener('click', (e) => {
+
     e.preventDefault(); //Esto hace que no se recargue la pagina
 
     const text = input.value;
@@ -17,6 +18,8 @@ addBtn.addEventListener('click', (e) => {
         li.appendChild(p);
         li.appendChild(addDeleteBtn());
         ul.appendChild(li);
+
+        //localStorageLista(text)
 
         input.value = ""; //Para que el input quede vacio
 
@@ -44,4 +47,8 @@ function addDeleteBtn(){
     })
 
     return deleteBtn;
+}
+
+function localStorageLista(plist){
+    localStorage.setItem('localLi', plist)
 }
